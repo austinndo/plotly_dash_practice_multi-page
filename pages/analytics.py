@@ -20,4 +20,7 @@ layout = html.Div(children=[
     Input(component_id='analytics-input', component_property='value')
 )
 def update_city_selected(input_value):
+    # F string / template literals
     return f'You selected: {input_value}'
+    # Just testing things... alternative way of returning the same as above:
+    # return html.Div(children=['You selected: ', input_value])
