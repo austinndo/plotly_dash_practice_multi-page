@@ -13,6 +13,8 @@ def description(asset_id=None, dept_id=None):
 dash.register_page(__name__, path_template="/asset/<asset_id>/department/<dept_id>",
                    title=title, description=description)
 
+# Note I'm using dash.html.Div instead of the usual html.Div on other pages
+
 
 def layout(asset_id=None, dept_id=None):
     return dash.html.Div(
