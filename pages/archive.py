@@ -1,9 +1,18 @@
 import dash
-from dash import html, dcc
+from dash import html
 
 dash.register_page(__name__)
 
-layout = html.Div(children=[
-    html.H1(children='This is the Archive page'),
-    html.Div(children=''' This is the Archive page content '''),
-])
+
+def layout(report_id=None):
+    return html.Div(
+        children=[
+            html.H1(children='This is our Archive page'),
+
+            html.Div(children=f'''
+	        This is report: {report_id}.
+	    '''),
+
+        ])
+
+# When you navigate to "http://127.0.0.1:8050/archive?report_id=3" we will display f'This is report: 3'
