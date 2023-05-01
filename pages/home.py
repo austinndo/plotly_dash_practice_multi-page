@@ -2,7 +2,7 @@ import dash
 from dash import html, dcc
 
 # Update title and description
-# Title is what appears in the browser tab, similar to title in the index.html file of my React apps
+# Title is what appears in the browser tab, similar to title in the index.html file of my React apps. You can set it here or automatically defaults to what the module name is (see two comments below)
 # You can also add more than one path variable which will be shared in links.. ex: /report/4/department/2/...
 
 
